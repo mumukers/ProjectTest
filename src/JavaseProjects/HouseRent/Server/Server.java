@@ -5,12 +5,11 @@ import JavaseProjects.HouseRent.domain.House;
 import java.net.BindException;
 
 public class Server {
-    private static int houseNum=1;
-    private static int Id=0;
+    private static int houseNum=0;
+    private static int Id=1;
     private House[] houses;
     public Server(int size){
         houses=new House[size];
-        houses[0]=new House(1,"李四","123456789","123456",2000,"未出租");
     }
 
     public House getHouse(int index){

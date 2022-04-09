@@ -81,7 +81,7 @@ public class mainMenu {
         house.setName(name);
 
         System.out.println("请输入电话号码("+house.getPhone()+")：");
-        String phone = Utility.readString(5, house.getPhone());
+        String phone = Utility.readString(12, house.getPhone());
         house.setPhone(phone);
 
         System.out.println("请输入地址("+house.getAddress()+")：");
@@ -93,12 +93,12 @@ public class mainMenu {
         house.setRent(rent);
 
         System.out.println("请输入状态("+house.getState()+")：");
-        String state = Utility.readString(5, house.getState());
+        String state = Utility.readString(20, house.getState());
         house.setState(state);
 
     }
     public void exit(){
-        System.out.print("你是否真的要退出(Y/N)：");
+        System.out.println("============退出系统============");
         char choice = Utility.readConfirmSelection();
         if(choice=='Y'){
             loop=false;
@@ -109,6 +109,7 @@ public class mainMenu {
 
     public void mainMenu(){
         do{
+            System.out.println("============房屋出租系统============");
             System.out.println("1.新增房屋");
             System.out.println("2.查找房屋");
             System.out.println("3.删除房屋");
