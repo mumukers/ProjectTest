@@ -72,10 +72,10 @@ public class House {
     public String toString() {
         return
                         id +
-                "\t\t" + name +
+                "\t" + name +
                 "\t" + phone  +
-                "\t" + address  +
-                "\t" + rent +
+                "\t " + address  +
+                "\t\t" + rent +
                 "\t" + state
                 ;
     }
