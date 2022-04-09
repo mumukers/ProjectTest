@@ -27,7 +27,7 @@ class Girlfriend{
     }
     public static Girlfriend getInstance(){
         if(gr==null){
-            gr=new Girlfriend("zp");
+            gr=new Girlfriend("张攀");
         }
         return gr;
     }
